@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnouncementTBCell" rowHeight="66" id="dyD-hq-Fzq" customClass="AnnouncementTBCell" customModule="IOSCodeTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dyD-hq-Fzq" id="WoX-37-O2G">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st May" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-ku-M09">
+                        <rect key="frame" x="15" y="10" width="363" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemIndigoColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Jo malance london's mother's day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seP-zO-O6E">
+                        <rect key="frame" x="15" y="35" width="363" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3Hy-ku-M09" secondAttribute="trailing" constant="15" id="5Yp-PQ-eaD"/>
+                    <constraint firstAttribute="trailing" secondItem="seP-zO-O6E" secondAttribute="trailing" constant="15" id="I7v-AR-6t2"/>
+                    <constraint firstAttribute="bottom" secondItem="seP-zO-O6E" secondAttribute="bottom" constant="10" id="NBI-sB-qJU"/>
+                    <constraint firstItem="seP-zO-O6E" firstAttribute="top" secondItem="3Hy-ku-M09" secondAttribute="bottom" constant="8" id="QwH-53-cBr"/>
+                    <constraint firstItem="3Hy-ku-M09" firstAttribute="leading" secondItem="WoX-37-O2G" secondAttribute="leading" constant="15" id="Ycw-k2-7cL"/>
+                    <constraint firstItem="3Hy-ku-M09" firstAttribute="top" secondItem="WoX-37-O2G" secondAttribute="top" constant="10" id="k1U-py-AWW"/>
+                    <constraint firstItem="seP-zO-O6E" firstAttribute="leading" secondItem="WoX-37-O2G" secondAttribute="leading" constant="15" id="yBY-Ya-AX3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="title" destination="seP-zO-O6E" id="1Rn-Nr-8TI"/>
+            </connections>
+            <point key="canvasLocation" x="159.54198473282443" y="-73.239436619718319"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
